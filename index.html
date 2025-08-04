@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Tip Calculator App Main Page">
+  <meta name="author" content="Lissandro Aguilar">
+  <meta content="tip calculator free app calculadora apps aplicacion
+propinas calcular propinas gratis calculadoa calculadora calcular prosp propinad" name="keyword">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+
+<div class="bg-image">
+</div>
+
+<div class="contenedor">
+
+  <section class="contenedor__inputdatos">
+    <label for="bill">Bill</label>
+    <input type="text" id="bill" placeholder="$" autocomplete="off">
+    <p class="tiptext">Select Tip %</p>
+    <div class="contenedor__inputdatos--porcentajes">
+      <button class="boton" id="por1">5%</button>
+      <button class="boton" id="por2">10%</button>
+      <button class="boton" id="por3">15%</button>
+      <button class="boton" id="por4">25%</button>
+      <button class="boton" id="por5">50%</button>
+      <input class="boton custom" id="por6" placeholder="Custom"></input>
+    </div>
+
+    <div class="peoplenumber">
+      <label class="mover" for="nmofpp">Number of People:</label>
+      <input type="text" name="nmofpp" id="nmofpp" autocomplete="off">
+    </div>
+
+
+  </section>
+  <section class="contenedor__outputdatos">
+    <div class="tipamount">
+    <p>Tip Amount <br>
+    <span>/ person</span></p>
+      <h2 class="cantidad fuenteInputs" id="tipPerson">--</h2>
+    </div>
+
+    <div class="totalamount">
+      <p>Total <br>
+      <span>/ person</span>
+      </p>
+      <h2 class="cantidad fuenteInputs" id="tipTotal">--</h2>
+    </div>
+
+<button id="reset" class="boton" onclick="reset()">Reset</button>
+
+  </section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
