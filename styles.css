@@ -124,7 +124,7 @@ span {
     width: 7rem;
     height: 3.5rem;
 }
-@media (max-width: 760px) {
+@media (max-width: 45rem) {
     .contenedor {
         grid-template-columns: 1fr;
         width: 95%;
