@@ -46,8 +46,8 @@ font-size: 24px;
     font-family: "Space Mono", monospace;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 55rem;
-    width: 100%;
+    width: 55rem;
+    max-width: 100%;
     margin: 15rem auto;
     background-color: var(--White);
     padding: 10px;
@@ -55,12 +55,14 @@ font-size: 24px;
     gap: 1rem;
     height: auto;
 }
-/*princiapal*/
+/*principal*/
 .contenedor__inputdatos {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
+    max-width: 100%;
+    width: auto;
 }
 label {
     color: var(--Grey400);
@@ -69,6 +71,7 @@ label {
     font-family: "Space Mono", monospace;
     display: flex;
     flex-direction: column;
+    width: auto;
     padding: 2rem;
     background-color: var(--Green900);
     border-radius: 10px;
@@ -76,6 +79,7 @@ label {
 .tipamount, .totalamount {
     display: flex;
     justify-content: space-between;
+    width: auto;
 }
 #reset {
     font-family: "Space Mono", monospace;
@@ -121,14 +125,14 @@ span {
     border-radius: 5px;
     border: medium;
     cursor: pointer;
-    width: 7rem;
     height: 3.5rem;
 }
 @media (max-width: 45rem) {
+
     .contenedor {
         grid-template-columns: 1fr;
         width: 95%;
-        margin: 2rem auto;
+        margin: 1rem auto;
         padding: unset;
     }
     .contenedor__outputdatos {
@@ -136,6 +140,7 @@ span {
         order: -1;
         height: 30rem;
         padding-bottom: 1rem;
+        width: 100%;
     }
     .contenedor__inputdatos--porcentajes {
         display: flex;
@@ -148,12 +153,12 @@ span {
         border-radius: 10px;
     }
     .boton {
-        width: 40rem;
+        width: 95%;
         height: 6rem;
         margin: auto;
     }
     input {
-        width: 100%;
+        width: 95%;
         padding: 10px;
         font-size: 2rem;
     }
