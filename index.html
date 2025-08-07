@@ -23,9 +23,18 @@ propinas calcular propinas gratis calculadoa calculadora calcular prosp propinad
 
 <div class="contenedor">
 
+
+
   <section class="contenedor__inputdatos">
-    <label for="bill">Bill</label>
-    <input type="text" id="bill" placeholder="$" autocomplete="off">
+    <div class="firstcontent">
+
+    <div class="condatos">
+    <label for="bill">Bill</label><br>
+    <input type="text" id="bill" placeholder="cantidad" autocomplete="off">
+    </div>
+    </div>
+
+
     <p class="tiptext">Select Tip %</p>
     <div class="contenedor__inputdatos--porcentajes">
       <button class="boton" id="por1">5%</button>
@@ -33,17 +42,21 @@ propinas calcular propinas gratis calculadoa calculadora calcular prosp propinad
       <button class="boton" id="por3">15%</button>
       <button class="boton" id="por4">25%</button>
       <button class="boton" id="por5">50%</button>
-      <input class="boton custom" id="por6" placeholder="Custom"></input>
+      <input class="boton custom" id="por6" placeholder="Custom">
     </div>
 
     <div class="peoplenumber">
-      <label class="mover" for="nmofpp">Number of People:</label>
-      <input type="text" name="nmofpp" id="nmofpp" autocomplete="off">
-    </div>
-
-
+      <div class="condatos">
+      <label class="mover" for="nmofpp">Number of People</label>
+      <input type="text" name="nmofpp" id="nmofpp" autocomplete="off" placeholder="People">
+      </div>
+      </div>
   </section>
+
+
   <section class="contenedor__outputdatos">
+
+    <section class="bg-inputs">
     <div class="tipamount">
     <p>Tip Amount <br>
     <span>/ person</span></p>
@@ -56,7 +69,7 @@ propinas calcular propinas gratis calculadoa calculadora calcular prosp propinad
       </p>
       <h2 class="cantidad fuenteInputs" id="tipTotal">--</h2>
     </div>
-
+    </section>
 <button id="reset" class="boton" onclick="reset()">Reset</button>
 
   </section>
